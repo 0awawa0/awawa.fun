@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /i/t0p_s3cre7.7x7
