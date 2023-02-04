@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="gallery.css">
 </head>
-<body>
+<body style="padding-top: 1%;">
   <main>
-    <h3><a href="./index.html">&lt; Back to main</a></h1>
+    <button id="btnBack" onclick="window.location='./index.html'" title="Go to top" class="btn">Main page</button>
 
     <h1>2023</h1>
     <div class="row">
@@ -54,6 +54,30 @@
       </div>
     </div>
   </main>
-  <footer>Copyright © 2022 Alexander Pozdniakov</footer>
+
+  <button id="btnTop" onclick="topFunction()" title="Go to top" class="btn">⇧</button>
+  <footer>Copyright © 2023 Alexander Pozdniakov</footer>
+
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("btnTop");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </body>
 </html>
