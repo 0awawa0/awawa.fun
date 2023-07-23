@@ -74,3 +74,22 @@ img.photo:hover {
 .my-float{
 	margin-top:22px;
 }
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin:2%;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
